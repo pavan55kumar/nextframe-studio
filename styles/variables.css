@@ -1,0 +1,70 @@
+:root {
+
+  /* ===== Colors ===== */
+
+  --background: #050505;
+  --surface: #101010;
+  --surface-light: #171717;
+
+  --foreground: #ffffff;
+  --muted: #9ca3af;
+
+  --primary: #8b5cf6;
+  --secondary: #4f46e5;
+  --accent: #00d4ff;
+
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  /* ===== Gradients ===== */
+
+  --gradient-primary:
+    linear-gradient(
+      135deg,
+      #8b5cf6 0%,
+      #4f46e5 100%
+    );
+
+  --gradient-background:
+    linear-gradient(
+      180deg,
+      #050505 0%,
+      #0f172a 100%
+    );
+
+  /* ===== Radius ===== */
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 30px;
+
+  /* ===== Shadows ===== */
+
+  --shadow-sm:
+    0 4px 12px rgba(0,0,0,.2);
+
+  --shadow-md:
+    0 10px 30px rgba(0,0,0,.35);
+
+  --shadow-lg:
+    0 25px 60px rgba(0,0,0,.45);
+
+  /* ===== Blur ===== */
+
+  --blur-sm: 8px;
+  --blur-md: 16px;
+  --blur-lg: 32px;
+
+  /* ===== Container ===== */
+
+  --container-width: 1440px;
+
+  /* ===== Transition ===== */
+
+  --transition-fast: .25s;
+  --transition-normal: .45s;
+  --transition-slow: .8s;
+
+}

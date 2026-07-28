@@ -1,0 +1,35 @@
+.container {
+
+  width: min(100% - 2rem, var(--container-width));
+
+  margin-inline: auto;
+
+}
+
+.section {
+
+  padding-block: 8rem;
+
+}
+
+.glass {
+
+  background: rgba(255,255,255,.05);
+
+  backdrop-filter: blur(var(--blur-md));
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  border-radius: var(--radius-lg);
+
+}
+
+.gradient-text {
+
+  background: var(--gradient-primary);
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+}
