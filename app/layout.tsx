@@ -3,6 +3,8 @@ import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
 import Providers from "@/components/layout/Providers";
+import CustomCursor from "@/components/ui/CustomCursor";
+import Loader from "@/components/loader/Loader"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -40,6 +42,8 @@ export default function RootLayout({
     >
       <body>
         <Providers>
+          <Loader />
+          <CustomCursor />
           {children}
         </Providers>
       </body>
