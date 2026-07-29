@@ -1,6 +1,6 @@
 "use client";
 
-import BackgroundGlow from "./BackgroundGlow";
+import Scene from "@/three/canvas/Scene";
 import HeroContent from "./HeroContent";
 import ScrollIndicator from "./ScrollIndicator";
 import ParallaxLayer from "./ParallaxLayer";
@@ -11,14 +11,22 @@ export default function Hero() {
   useHeroAnimation();
 
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-black px-6">
-      <BackgroundGlow />
+    <section className="relative min-h-screen overflow-hidden bg-black">
 
-      <ParallaxLayer speed={15}>
-  <HeroContent />
-</ParallaxLayer>
+      {/* Three.js Background */}
+      <div className="absolute inset-0 z-0">
+        <Scene />
+      </div>
+
+      {/* Hero Content */}
+     <div className="relative z-20 flex min-h-screen items-center justify-center px-6">
+        <ParallaxLayer speed={15}>
+          <HeroContent />
+        </ParallaxLayer>
+      </div>
 
       <ScrollIndicator />
+
     </section>
   );
 }
