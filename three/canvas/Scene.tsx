@@ -5,7 +5,7 @@ import { Suspense } from "react";
 
 import CameraRig from "./CameraRig";
 import Lights from "../lights/Lights";
-import TestSphere from "../scenes/TestSphere";
+import ParticleField from "../particles/ParticleField";
 
 export default function Scene() {
   return (
@@ -20,7 +20,7 @@ export default function Scene() {
       <Suspense fallback={null}>
         <CameraRig />
         <Lights />
-        <TestSphere />
+        <ParticleField />
       </Suspense>
     </Canvas>
   );
