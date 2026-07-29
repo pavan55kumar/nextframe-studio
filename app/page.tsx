@@ -1,9 +1,13 @@
+import Navbar from "@/components/layout/Navbar";
+import Hero from "@/components/hero/Hero";
+import ScrollProgress from "@/components/layout/ScrollProgress";
 export default function Home() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-black text-white">
-      <h1 className="text-6xl font-bold">
-        NextFrame Studio
-      </h1>
-    </main>
+    <>
+      <ScrollProgress />
+      <Navbar />
+      <Hero />
+      <div className="h-[200vh] bg-black"></div>
+    </>
   );
 }
